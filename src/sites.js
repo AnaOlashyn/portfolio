@@ -27,13 +27,6 @@ export const sites = [{
         description: 'The web-page with a moviebox.',
     },
     {
-        name: "moviebox",
-        technologies: ['HTML5', 'CSS3'],
-        webPage: 'https://anaolashyn.github.io/moviebox/',
-        github: 'https://github.com/AnaOlashyn/moviebox',
-        description: 'The web-page with a moviebox.',
-    },
-    {
         name: "transition-demos",
         technologies: ['JS', 'CSS3', 'SCSS', 'React'],
         webPage: 'https://anaolashyn.github.io/react-css-transition-demos/',
