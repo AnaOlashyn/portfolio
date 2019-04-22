@@ -21,8 +21,8 @@ class App extends Component {
                 <div className="sites__title">
                   <span>{item.name}</span>
                   <div className="sites__links">
-                    <a href={item.webPage}><FaLink color='lightcoral' /></a>
-                    <a href={item.github}><GoMarkGithub color='lightcoral' /></a>
+                    <a href={item.webPage}  target="_blank"><FaLink color='lightcoral' /></a>
+                    <a href={item.github}  target="_blank"><GoMarkGithub color='lightcoral' /></a>
                   </div>
                 </div>
                 <p className="sites__description">
