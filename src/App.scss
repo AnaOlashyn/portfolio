@@ -24,19 +24,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow:hidden;
+    overflow: hidden;
+
     @include laptop {
         width: 60%;
     }
+
     @include tablet {
         width: 75%;
     }
+
     @include mobile {
         width: 80%;
     }
+
     @include xs-mobile {
         width: 90%;
     }
+
     &__title {
         font-family: 'EB Garamond', serif;
         display: flex;
@@ -46,9 +51,11 @@
         padding-bottom: 30px;
         font-size: 36px;
         letter-spacing: 1px;
+
         @include mobile {
             font-size: 30px;
         }
+
         @include xs-mobile {
             font-size: 24px;
         }
@@ -66,18 +73,21 @@
     flex-wrap: wrap;
     color: rgb(0, 0, 0);
     font-size: 18px;
+
     @include mobile {
         padding: 10px 2%;
         justify-content: center;
     }
+
     &__block {
-        padding: 10px;
+        transition: 1s;
+        padding: 10px 40px;
         height: 170px;
         width: 46%;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         background-color: rgba(255, 255, 255, 0.822);
         border: solid 1px rgb(255, 255, 255);
@@ -86,25 +96,37 @@
         -webkit-box-shadow: 0px 0px 12px 0px rgba(190, 190, 190, 0.75);
         -moz-box-shadow: 0px 0px 12px 0px rgba(168, 168, 168, 0.75);
         box-shadow: 0px 0px 12px 0px rgba(170, 170, 170, 0.75);
+        @include laptop {
+            padding: 10px 30px;
+        }
+        @include tablet {
+            padding: 10px 20px;
+        }
         @include mobile {
             width: 90%;
+            padding: 10px 20px;
+        }
+        &:hover {
+            transform: scale(1.03);
+            z-index: 10;
         }
     }
+
     &__title {
         font-family: 'EB Garamond', serif;
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         font-size: 22px;
     }
 
     &__description {
-        width: 80%;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        text-align: center;
+
         @include xs-mobile {
             font-size: 16px;
             width: 90%;
@@ -112,35 +134,54 @@
     }
 
     &__links {
-        font-size: 18px;
-        width: 15%;
+        font-size: 19px;
+        width: 25%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mobile {
+            width: 18%;
+            font-size: 20px;
+        }
+        @include xs-mobile {
+            width: 25%;
+            font-size: 20px;
+        }
     }
+
     &__technologies {
-        width: 80%;
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         text-align: center;
+
         @include xs-mobile {
             font-size: 16px;
         }
     }
+
+    &__techno {
+        border-radius: 5px;
+        margin-right: 3px;
+    }
 }
 
-::-webkit-scrollbar{
-    width:12px;
+::-webkit-scrollbar {
+    width: 12px;
 }
 
-::-webkit-scrollbar-thumb{
-    border-width:1px 1px 1px 2px;
+::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
     border-color: rgb(224, 224, 224);
     background-color: rgb(231, 231, 231);
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     border-width: 1px 1px 1px 2px;
     border-color: rgb(199, 199, 199);
     background-color: rgb(194, 194, 194);
+}
+
+a {
+    cursor: pointer;
 }

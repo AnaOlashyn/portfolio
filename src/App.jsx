@@ -17,7 +17,6 @@ class App extends Component {
           <div className="sites">
             {sites.map((item) => (
               <div className="sites__block" key = {item.name}>
-
                 <div className="sites__title">
                   <span>{item.name}</span>
                   <div className="sites__links">
@@ -30,7 +29,7 @@ class App extends Component {
                 </p>
                 <div className="sites__technologies">
                   {item.technologies.map((techology) => (
-                    <span className="sites__techno" key = {techology}>{techology}. </span>
+                    <span className="sites__techno" key = {techology}>{techology} </span>
                   ))}
                 </div>
               </div>
