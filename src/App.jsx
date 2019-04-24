@@ -18,10 +18,10 @@ class App extends Component {
             {sites.map((item) => (
               <div className="sites__block" key = {item.name}>
                 <div className="sites__title">
-                  <span>{item.name}</span>
+                  <span className="sites__name">{item.name}</span>
                   <div className="sites__links">
-                    <a href={item.webPage} rel="noopener noreferrer"  target="_blank"><FaLink color='lightcoral' /></a>
-                    <a href={item.github} rel="noopener noreferrer"  target="_blank"><GoMarkGithub color='lightcoral' /></a>
+                    <a href={item.webPage} rel="noopener noreferrer"   target="_blank"><FaLink className="sites__link" /></a>
+                    <a href={item.github} rel="noopener noreferrer" target="_blank"><GoMarkGithub className="sites__link"  /></a>
                   </div>
                 </div>
                 <p className="sites__description">
@@ -29,7 +29,7 @@ class App extends Component {
                 </p>
                 <div className="sites__technologies">
                   {item.technologies.map((techology) => (
-                    <span className="sites__techno" key = {techology}>{techology} </span>
+                    <span className="sites__techno" key = {techology}>{techology}/ </span>
                   ))}
                 </div>
               </div>

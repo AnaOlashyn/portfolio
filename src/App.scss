@@ -80,7 +80,7 @@
     }
 
     &__block {
-        transition: 1s;
+        transition: 0.8s;
         padding: 10px 40px;
         height: 170px;
         width: 46%;
@@ -96,20 +96,30 @@
         -webkit-box-shadow: 0px 0px 12px 0px rgba(190, 190, 190, 0.75);
         -moz-box-shadow: 0px 0px 12px 0px rgba(168, 168, 168, 0.75);
         box-shadow: 0px 0px 12px 0px rgba(170, 170, 170, 0.75);
+
         @include laptop {
             padding: 10px 30px;
         }
+
         @include tablet {
             padding: 10px 20px;
         }
+
         @include mobile {
             width: 90%;
             padding: 10px 20px;
         }
+
         &:hover {
-            transform: scale(1.03);
+            transform: scale(1.02);
             z-index: 10;
         }
+    }
+
+    &__name {
+        color: lightcoral;
+        text-shadow: 1px 2px 2px rgb(247, 196, 201),
+        -1px 2px 2px rgb(252, 202, 205);
     }
 
     &__title {
@@ -118,7 +128,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 22px;
+        font-size: 24px;
     }
 
     &__description {
@@ -139,13 +149,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         @include mobile {
             width: 18%;
             font-size: 20px;
         }
+
         @include xs-mobile {
             width: 25%;
             font-size: 20px;
+        }
+    }
+
+    &__link {
+        color: lightcoral;
+
+        &:hover {
+            color: black;
         }
     }
 
@@ -161,8 +181,9 @@
     }
 
     &__techno {
-        border-radius: 5px;
-        margin-right: 3px;
+        margin-right: 1px;
+        color: lightcoral;
+
     }
 }
 
