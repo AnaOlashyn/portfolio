@@ -32,6 +32,13 @@ export const sites = [{
         webPage: 'https://anaolashyn.github.io/react-css-transition-demos/',
         github: 'https://github.com/AnaOlashyn/react-css-transition-demos',
         description: 'The web-page with demos of different transitions.',
+    },
+    {
+        name: "current-weather",
+        technologies: ['JS', 'CSS3', 'SCSS', 'React', 'Ajax'],
+        webPage: 'https://anaolashyn.github.io/current-weather/',
+        github: 'https://github.com/AnaOlashyn/current-weather',
+        description: 'The web-page with current weather on your location.',
     }
 
 ]
